@@ -1,0 +1,27 @@
+.logo{
+   > a {
+      color: #fff;
+      font-weight: 600;
+      font-size: 40px;
+      position: relative;
+      border-bottom:none ;
+      align-items: center;
+
+      &:hover {
+         &::after{
+            width: 100%;   
+         }
+      }
+      &::after{
+         content: '';
+         position: absolute;
+         top: 95%;
+         left: 50%;
+         translate: -50%;
+         width: 0px;
+         height: 1px;
+         background-color: currentColor;
+         transition-duration: inherit;
+      }
+   }
+}
